@@ -23,12 +23,3 @@ spring:
       enabled: true
       settings:
         web-allow-others: false
-
-#        spring:
-#          application:
-#            name: eureka-client
-#        server:
-#          port: 12211
-#        eureka:
-#          client:
-#            serviceUrl.defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}

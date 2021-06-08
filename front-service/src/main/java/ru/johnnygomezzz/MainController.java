@@ -12,7 +12,7 @@ public class MainController {
 
     @GetMapping
     public String getDataFromProducts() {
-        String answerFromProductsService = restTemplate.getForObject("http://localhost:8187/products", String.class);
+        String answerFromProductsService = restTemplate.getForObject("http://product-client/products", String.class);
         return "From products: " + answerFromProductsService;
     }
 }
