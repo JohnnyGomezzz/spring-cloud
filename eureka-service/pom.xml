@@ -8,8 +8,8 @@
         <version>2.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>spring-cloud</artifactId>
+    <groupId>ru.johnnygomezzz</groupId>
+    <artifactId>eureka-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>

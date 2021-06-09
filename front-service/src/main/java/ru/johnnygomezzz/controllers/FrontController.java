@@ -1,11 +1,10 @@
-package ru.johnnygomezzz;
+package ru.johnnygomezzz.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.List;
+import ru.johnnygomezzz.ProductDto;
 
 @RestController
 public class FrontController {
@@ -14,7 +13,7 @@ public class FrontController {
 
     @GetMapping("/get_products")
     public ProductDto[] getDataFromProducts() {
-        ProductDto[] answer = restTemplate.getForObject("http://localhost:8189/products/get_array", ProductDto[].class);
+        ProductDto[] answer = restTemplate.getForObject("http://product-client/products/get_array", ProductDto[].class);
         return answer;
     }
 
