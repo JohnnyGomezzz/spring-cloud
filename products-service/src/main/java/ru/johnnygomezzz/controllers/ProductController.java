@@ -26,16 +26,4 @@ public class ProductController {
         }
         return productDtos;
     }
-
-    @GetMapping("/get_array")
-    public ProductDto[] GetArray() {
-        List<Product> products = productService.findAll();
-        ProductDto[] productDtos = new ProductDto[products.size()];
-        for (int i = 0; i<products.size(); i++) {
-            product = products.get(i);
-            ProductDto productDto = new ProductDto(product.getId(), product.getTitle());
-            productDtos[i] = productDto;
-        }
-        return productDtos;
-    }
 }
