@@ -12,6 +12,7 @@
         <module>products-service</module>
         <module>front-service</module>
         <module>common</module>
+        <module>eureka-service</module>
     </modules>
 
     <properties>
